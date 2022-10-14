@@ -1,0 +1,5 @@
+!pip install mysql.connector
+import mysql.connector
+conn=mysql.connector.connect(host='localhost',user='root',password='',database='world')
+df=pd.read_sql_query("SELECT * FROM countrylanguage",conn)
+df
